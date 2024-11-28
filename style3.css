@@ -1,0 +1,148 @@
+/* General Styling */
+body {
+    font-family:  'Orbitron', sans-serif;;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(213, 227, 232);
+    text-align: center;
+}
+
+header h1{
+    font-family: 'Orbitron', sans-serif;
+    background-color: #e803ce;
+    color: #fff;
+    padding: 1rem 0;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.5),  /* Dark shadow (bottom-right) */
+        -2px -2px 4px rgba(255, 255, 255, 0.7); /* Light shadow (top-left) */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+#doll-container {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-image: url('images/Background.png'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the background image */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#doll {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+}
+
+#hair {
+    position: absolute;
+    width: 135%; /* Slightly enlarge the hair */
+    height: 135%; /* Slightly enlarge the hair */
+    top: -18%; /* Move the hair upwards */
+    left: -17.5%; /* Center the hair */
+    z-index: 3; /* Layer above the doll */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#clothing1{
+    position: absolute;
+    width: 138%; /* Slightly enlarge the clothing */
+    height: 136%; /* Slightly enlarge the clothing */
+    top: -18%; /* Move the clothing upwards */
+    left: -19%; /* Center the clothing */
+    z-index: 2; /* Layer above the hair */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#clothing2{
+    position: absolute;
+    width: 138%; /* Slightly enlarge the clothing */
+    height: 136%; /* Slightly enlarge the clothing */
+    top: -18%; /* Move the clothing upwards */
+    left: -19%; /* Center the clothing */
+    z-index: 2; /* Layer above the hair */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#clothing3 {
+    position: absolute;
+    width: 138%; /* Slightly enlarge the clothing */
+    height: 136%; /* Slightly enlarge the clothing */
+    top: -18%; /* Move the clothing upwards */
+    left: -19%; /* Center the clothing */
+    z-index: 2; /* Layer above the hair */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#clothing4 {
+        position: absolute;
+        width: 138%; /* Slightly enlarge the clothing */
+        height: 136%; /* Slightly enlarge the clothing */
+        top: -18%; /* Move the clothing upwards */
+        left: -19%; /* Center the clothing */
+        z-index: 2; /* Layer above the hair */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+/* Controls */
+#controls {
+    margin-top: 20px;
+    display: flex; /* Flexbox layout for horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping if buttons overflow */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px 20px;
+    background-color: #ff00c3;
+    color: rgb(249, 249, 249);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+/* Hover Effect for Buttons */
+button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Slightly larger shadow */
+}
+button i {
+    font-size: 16px; /* Adjust icon size */
+    color:#fff;
+}

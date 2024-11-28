@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dress-Up Game</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Dress-Up Game</h1>
+  </header>
+
+  <main>
+    <div id="game-container">
+      <!-- Doll Container -->
+      <div id="doll-container">
+        <img id="doll" src="images/Doll2.png" alt="Doll">
+        <div id="hair"></div>
+        <div id="clothing1"></div>
+        <div id="clothing2"></div>
+        <div id="clothing3"></div>
+        <div id="clothing4"></div>
+      </div>
+
+      <!-- Controls -->
+      <div id="controls">
+        <button onclick="nextHair()">
+          <i class="fa-solid fa-heart"></i> Change Hair
+        </button>
+        <button onclick="nextDress()">
+          <i class="fa-solid fa-heart"></i> Change Dress
+        </button>
+        <button onclick="nextTop()">
+          <i class="fa-solid fa-heart"></i> Change Top
+        </button>
+        <button onclick="nextSkirt()">
+          <i class="fa-solid fa-heart"></i> Change Skirt
+        </button>
+        <button onclick="nextPants()">
+          <i class="fa-solid fa-heart"></i> Change Pants
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Dress-Up Game. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script3.js"></script>
+</body>
+</html>
